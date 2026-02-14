@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Anjala Krishen | Marathon & Ultramarathon Record</title>
+  <meta name="description" content="Marathon and ultramarathon record (95 races, 2003–2025) for Dr. Anjala Krishen." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #c1121f;
+      --secondary: #003049;
+      --accent: #669bbc;
+      --bg1: #001d3d;
+      --bg2: #003049;
+      --card: rgba(255,255,255,0.08);
+      --card2: rgba(255,255,255,0.05);
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.75);
+      --border: rgba(255,255,255,0.14);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 15% 10%, rgba(102,155,188,0.22), transparent 55%),
+                  radial-gradient(900px 600px at 85% 25%, rgba(193,18,31,0.20), transparent 55%),
+                  linear-gradient(135deg, var(--bg2), var(--bg1));
+      line-height: 1.5;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: rgba(255,255,255,0.35);
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      text-decoration-color: rgba(255,255,255,0.9);
+    }
+
+    header {
+      padding: 72px 20px 28px;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 34px 26px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.22);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(120deg, rgba(102,155,188,0.22), rgba(193,18,31,0.18), rgba(102,155,188,0.10));
+      filter: blur(22px);
+      opacity: 0.65;
+      z-index: 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: 0.2px;
+      color: var(--primary);
+      text-shadow: 0 6px 24px rgba(0,0,0,0.35);
+    }
+
+    .subtitle {
+      margin: 0;
+      font-weight: 300;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.06);
+      border-radius: 14px;
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    .pill .k {
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .pill .v {
+      margin-top: 4px;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 70px;
+    }
+
+    .controls {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr 0.6fr;
+      gap: 12px;
+    }
+
+    .input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.06);
+      color: #fff;
+      outline: none;
+    }
+
+    .input::placeholder { color: rgba(255,255,255,0.55); }
+
+    .table-wrap {
+      margin-top: 20px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 16px 45px rgba(0,0,0,0.30);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 980px;
+    }
+
+    thead th {
+      position: sticky;
+      top: 0;
+      background: rgba(193,18,31,0.92);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      text-align: left;
+      padding: 12px 12px;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+      z-index: 2;
+    }
+
+    tbody td {
+      padding: 12px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      vertical-align: top;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.92);
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.03);
+    }
+
+    tbody tr:hover {
+      background: rgba(102,155,188,0.10);
+      transition: background 0.18s ease;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 22px 10px 45px;
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+    }
+
+    .hint {
+      margin-top: 10px;
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      .meta { grid-template-columns: 1fr; }
+      .controls { grid-template-columns: 1fr; }
+      header { padding-top: 54px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="hero-inner">
+        <h1>Dr. Anjala Krishen</h1>
+        <p class="subtitle">Marathon & Ultramarathon Record</p>
+
+        <div class="meta">
+          <div class="pill">
+            <div class="k">Total races</div>
+            <div class="v" id="totalRaces">95</div>
+          </div>
+          <div class="pill">
+            <div class="k">Years covered</div>
+            <div class="v">2003–2025</div>
+          </div>
+          <div class="pill">
+            <div class="k">Quick filter</div>
+            <div class="v" id="visibleCount">95 shown</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <input class="input" id="q" type="search" placeholder="Search (event, notes, date, time…)" />
+          <input class="input" id="fromYear" inputmode="numeric" placeholder="From year" />
+          <input class="input" id="toYear" inputmode="numeric" placeholder="To year" />
+        </div>
+
+        <div class="hint">Tip: try “BLU”, “Boston”, “50 Miler”, “PR”, or a year like “2016”.</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="table-wrap">
+      <div style="overflow:auto;">
+        <table id="raceTable" aria-label="Marathon and Ultramarathon Record">
+          <thead>
+            <tr>
+              <th style="width:64px;">#</th>
+              <th style="width:160px;">Date</th>
+              <th>Event</th>
+              <th style="width:120px;">Result</th>
+              <th style="width:140px;">Pace / Distance</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+<tr><td>1</td><td>Feb. 22, 2003</td><td><a href="http://www.mbmarathon.com/site3.aspx" target="_blank" rel="noopener noreferrer">Myrtle Beach</a></td><td>4:55:24</td><td>11:16</td><td>Flat and fast</td></tr>
+<tr><td>2</td><td>April 19, 2003</td><td><a href="http://www.charlottesvillemarathon.com/" target="_blank" rel="noopener noreferrer">Charlottesville</a></td><td>4:58:41</td><td>11:23</td><td>Climbing a mountain, inaugural marathon</td></tr>
+<tr><td>3</td><td>Nov. 15, 2003</td><td><a href="http://www.richmondmarathon.org/" target="_blank" rel="noopener noreferrer">Suntrust Richmond</a></td><td>4:22:58</td><td>10:02</td><td></td></tr>
+<tr><td>4</td><td>Feb. 21, 2004</td><td><a href="http://www.mbmarathon.com/site3.aspx" target="_blank" rel="noopener noreferrer">Myrtle Beach</a></td><td>4:30:45</td><td>10:20</td><td></td></tr>
+<tr><td>5</td><td>Nov. 13, 2004</td><td><a href="http://www.richmondmarathon.org/" target="_blank" rel="noopener noreferrer">Suntrust Richmond</a></td><td>4:18:29</td><td>9:52</td><td></td></tr>
+<tr><td>6</td><td>March 19, 2005</td><td><a href="http://www.shamrockmarathon.com/site3.aspx" target="_blank" rel="noopener noreferrer">Shamrock VA Beach</a></td><td>4:41:14</td><td>10:44</td><td></td></tr>
+<tr><td>7</td><td>May 22, 2005</td><td><a href="http://www.clevelandmarathon.com/" target="_blank" rel="noopener noreferrer">Cleveland RiteAid</a></td><td>4:20:25</td><td>9:56</td><td></td></tr>
+<tr><td>8</td><td>Nov. 12, 2005</td><td><a href="http://www.richmondmarathon.org/" target="_blank" rel="noopener noreferrer">Suntrust Richmond</a></td><td>4:14:44</td><td>9:43</td><td></td></tr>
+<tr><td>9</td><td>March 12, 2006</td><td><a href="http://www.runtricities.org/creepermarathon/" target="_blank" rel="noopener noreferrer">Virginia Creeper</a></td><td>4:23:24</td><td>10:03</td><td>First small marathon, only 100 runners, no frills</td></tr>
+<tr><td>10</td><td>Nov. 11, 2006</td><td><a href="http://www.richmondmarathon.org/" target="_blank" rel="noopener noreferrer">Suntrust Richmond</a></td><td>4:31:12</td><td>10:20</td><td></td></tr>
+<tr><td>11</td><td>March 24, 2007</td><td><a href="http://www.nationalmarathon.com/" target="_blank" rel="noopener noreferrer">Wirefly National Marathon</a></td><td>4:35:00</td><td>10:29</td><td></td></tr>
+<tr><td>12</td><td>Dec. 2, 2007</td><td><a href="http://www.rnrvegas.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:14:15</td><td>9:42</td><td></td></tr>
+<tr><td>13</td><td>March 2, 2008</td><td><a href="http://www.lamarathon.com/" target="_blank" rel="noopener noreferrer">Los Angeles Marathon</a></td><td>4:13:48</td><td>9:41</td><td>**Fastest marathon to date</td></tr>
+<tr><td>14</td><td>June 28, 2008</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with the Devil</a></td><td>5:39:16</td><td>12:56</td><td>112 F high temp; 1 st place female age group</td></tr>
+<tr><td>15</td><td>Nov. 2, 2008</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">RECYCLED! marathon</a></td><td>4:43:58</td><td>10:50</td><td>High winds and hills; 1 st place overall female</td></tr>
+<tr><td>16</td><td>Dec. 7, 2008</td><td><a href="http://www.rnrvegas.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:29:16</td><td>10:16</td><td></td></tr>
+<tr><td>17</td><td>March 7, 2009</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Red Rock Canyon marathon</a></td><td>4:54:14</td><td>11:14</td><td>Unending hills and high winds</td></tr>
+<tr><td>18</td><td>April 25, 2009</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:43:35</td><td>10:49</td><td>Hills, snow, high winds; 1 st place female age group; CALICO SLAM!</td></tr>
+<tr><td>19</td><td>July 26, 2009</td><td><a href="http://www.runsfm.com/" target="_blank" rel="noopener noreferrer">San Francisco Marathon</a></td><td>4:34:37</td><td>10:29</td><td>Lots of hills, bronchitis/asthma (Nice to finish after Devil DNF!)</td></tr>
+<tr><td>20</td><td>Oct. 31, 2009</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Hoover Dam marathon</a></td><td>4:54:14</td><td>11:13</td><td>Lots of hills, Reunion of Grandpa, Axenya, and me racing together</td></tr>
+<tr><td>21</td><td>Dec. 8, 2009</td><td><a href="https://las-vegas.competitor.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:33:11</td><td>10:25</td><td>Super cold! 33 degrees plus wind chill</td></tr>
+<tr><td>22</td><td>Jan. 9, 2010</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with Angels marathon</a></td><td>4:43:31</td><td>10:49</td><td>Lots of hills but beautiful</td></tr>
+<tr><td>23</td><td>April 10, 2010</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>5:05:39</td><td>11:39</td><td>Terrible winds, hills, and an upset stomach, always next time</td></tr>
+<tr><td>24</td><td>June 26, 2010</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with the Devil</a></td><td>5:52:06</td><td>13:26</td><td>Finished it! It was HOT though; CALICO SLAM #2!</td></tr>
+<tr><td>25</td><td>Oct. 30, 2010</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Hoover Dam marathon</a></td><td>4:49:14</td><td>11:02</td><td>Lots of hills, windy, and Dad did the half again!</td></tr>
+<tr><td>26</td><td>Dec. 5, 2010</td><td><a href="https://las-vegas.competitor.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:21:32</td><td>9:58</td><td>Pretty cold and damp but lots of fun</td></tr>
+<tr><td>27</td><td>Jan. 8, 2011</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with Angels Ultramarathon</a><br>50 Miler</td><td>10:04:23</td><td>12:05</td><td>First ULTRAMARATHON! 50 miles!! It was tough but an incredible experience!</td></tr>
+<tr><td>28</td><td>April 9, 2011</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:53:06</td><td>11:16</td><td>Windy and hilly as usual</td></tr>
+<tr><td>29</td><td>June 25, 2011</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with the Devil</a></td><td>6:06:44</td><td>14:00</td><td>Not fun but I finished; CALICO SLAM #3!</td></tr>
+<tr><td>30</td><td>Oct. 29, 2011</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Hoover Dam marathon</a></td><td>4:49:29</td><td>11:03</td><td>Windy and cold but Dad and I finished strong for the third year</td></tr>
+<tr><td>31</td><td>Dec. 4, 2011</td><td><a href="http://www.stripatnight.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:28:11</td><td>10:13</td><td>Super overcrowded and the worst ever but LV is still the best</td></tr>
+<tr><td>32</td><td>Jan. 7, 2012</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with Angels Ultramarathon</a><br>50 Miler</td><td>9:55:51</td><td>11:55</td><td>Fastest Ultramarathon 50 Miler Ever!</td></tr>
+<tr><td>33</td><td>Feb. 5, 2012</td><td><a href="http://www.surfcitymarathon.com/" target="_blank" rel="noopener noreferrer">Surf City Marathon</a>**</td><td>4:11:26</td><td>9:35</td><td>PR -- Fastest Marathon Ever!!</td></tr>
+<tr><td>34</td><td>April 21, 2012</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:57:51</td><td>11:22</td><td>Hot! And very hilly of course</td></tr>
+<tr><td>35</td><td>May 6, 2012</td><td><a href="http://www.ocmarathon.com/" target="_blank" rel="noopener noreferrer">OC marathon</a></td><td>4:15:44</td><td>9:46</td><td>Beautiful course</td></tr>
+<tr><td>36</td><td>June 23, 2012</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with the Devil</a></td><td>5:17:46</td><td>12:07</td><td>Devil Marathon PR! Hot and lots of warm wind; CALICO SLAM #4!</td></tr>
+<tr><td>37</td><td>August 31, 2012</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Blue Moon Marathon</a></td><td>4:51:50</td><td>11:07</td><td>Done by time not distance; Loop marathon in the evening. Dad did the half.</td></tr>
+<tr><td>38</td><td>Nov. 3, 2012</td><td>Really Big Free Marathon</td><td>4:48:02</td><td>10:59</td><td>Company went out of business, it was hilly!</td></tr>
+<tr><td>39</td><td>Dec. 2, 2012</td><td><a href="http://www.stripatnight.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:32:31</td><td>10:23</td><td>Super windy and hilly this year. Ugh.</td></tr>
+<tr><td>40</td><td>Jan. 12, 2013</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with Angels Ultramarathon</a><br>50 Miler</td><td>10:04:50</td><td>12:06</td><td>Major thanks to Karla Kent for motivating me!</td></tr>
+<tr><td>41</td><td>April 20, 2013</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:55:03</td><td>11:15</td><td>Hot again! Great to have that out of the way!</td></tr>
+<tr><td>42</td><td>August 18, 2013</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Extraterrestrial marathon</a></td><td>4:45:16</td><td>10:53</td><td>First time to run this one, all night (starts at midnight). Tough but fun CALICO SLAM #5!</td></tr>
+<tr><td>43</td><td>September 14, 2013</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Last Ever Running with the Devil</a></td><td>4:58:10</td><td>11:23</td><td>Fastest ever Devil! Hot as always but Axenya did the half with me, so FUN!</td></tr>
+<tr><td>44</td><td>Nov. 17, 2013</td><td><a href="http://www.stripatnight.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:21:05</td><td>9:57</td><td>First half was much better than second half.</td></tr>
+<tr><td>45</td><td>Jan. 25, 2014</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Running with Angels Ultramarathon</a><br>50 Miler</td><td>10:41:02</td><td>12:49</td><td>Not my favorite but I kept going.</td></tr>
+<tr><td>46</td><td>May 3, 2014</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:58:19</td><td>11:23</td><td>To say it was windy is an understatement. Highest winds I have ever run against. Pretty hot as well. But done! First place in my age group.</td></tr>
+<tr><td>47</td><td>Nov. 16, 2014</td><td><a href="http://www.stripatnight.com/" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:32:13</td><td>10:22</td><td>Cold.</td></tr>
+<tr><td>48</td><td>Dec. 13, 2014</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Hoover Dam marathon</a></td><td>5:15:06</td><td>12:01</td><td>Not my best but I finished and it was cold and windy.</td></tr>
+<tr><td>49</td><td>Feb. 14, 2015</td><td><a href="http://www.beyondlimitsrunning.com/limitlessevents/JackpotUltraRunning" target="_blank" rel="noopener noreferrer">Jackpot Ultra Running Festival</a></td><td>24 hours</td><td>Miles: 85.3</td><td>Pace: 16:53; Longest distance I have ever run! Experience of a lifetime.</td></tr>
+<tr><td>50</td><td>May 2, 2015</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:45:12</td><td>10:53</td><td>Pretty hot but I got my second fastest time on this course. First place in my age group.</td></tr>
+<tr><td>51</td><td>August 29, 2015</td><td><a href="http://www.julianfullmoon.com/" target="_blank" rel="noopener noreferrer">Julian Station Full Moon Ultra Run</a></td><td>24 hours</td><td>Miles: 80.4</td><td>Pace: 17:54; Very hot for the first 10 hours (temps reached over 90F). Overall 1 st female.</td></tr>
+<tr><td>52</td><td>Dec. 5, 2015</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Las Vegas Backcountry Trail Marathon</a></td><td>5:15:48</td><td>12:00</td><td>Second place in age group. Race was my first trail marathon, it was hilly and very rocky.</td></tr>
+<tr><td>53</td><td>April 3, 2016</td><td><a href="http://beyondlimitsrunning.businesscatalyst.com/raceresultsandphotos/2016-blu-results" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>30:25:11</td><td>Miles: 100</td><td>I did it!! First time ever to run 100 miles. My first buckle. GRIT.</td></tr>
+<tr><td>54</td><td>April 24, 2016</td><td><a href="http://www.bsim.org/The_32nd__Presentation.htm" target="_blank" rel="noopener noreferrer">Big Sur Marathon</a></td><td>5:13:18</td><td>11:57</td><td>Long story. I faceplanted at mile 15. Lots of bruising and a huge cut on my chin. Kept running. Went to hospital after I finished and got 8 stitches on my chin. GRIT.</td></tr>
+<tr><td>55</td><td>October 29, 2016</td><td><a href="http://calicoracing.com/wp-content/uploads/2015/02/2016-Las-Vegas-Backcountry-Marathon-Overall.htm" target="_blank" rel="noopener noreferrer">Las Vegas Backcountry Marathon</a></td><td>5:05:55</td><td>11:41</td><td>Windy and hilly</td></tr>
+<tr><td>56</td><td>November 13, 2016</td><td><a href="https://www.runrocknroll.com/finisher-zone/search-and-results/?resultpage=1&amp;eventid=38&amp;subevent_id=1&amp;bib=7005" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:24:17</td><td>10:04</td><td>Slowed down quite a bit when it got dark but fine with my overall performance.</td></tr>
+<tr><td>57</td><td>March 11, 2017</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:58:42</td><td>11:24</td><td>Very windy and hilly as always but pushed through.</td></tr>
+<tr><td>58</td><td>April 8, 2017</td><td><a href="http://beyondlimitsrunning.businesscatalyst.com/raceresultsandphotos/2016-blu-results" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>29:00:22</td><td>Miles: 100</td><td>Fastest 100 miles ever! PR, second buckle, and 1 hour 25 mins faster than my first.</td></tr>
+<tr><td>59</td><td>November 12, 2017</td><td><a href="https://www.runrocknroll.com/finisher-zone/search-and-results/?resultpage=1&amp;eventid=38&amp;subevent_id=1&amp;bib=7005" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:32:02</td><td>10:22</td><td>Cold but relatively fine with my performance.</td></tr>
+<tr><td>60</td><td>Dec. 10, 2017</td><td><a href="http://www.bbscrun.com/" target="_blank" rel="noopener noreferrer">Hoover Dam marathon</a></td><td>4:52:42</td><td>11:10</td><td>Second place in age group! Super cold but I kept going.</td></tr>
+<tr><td>61</td><td>March 10, 2018</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>4:54:59</td><td>11:16</td><td>Rained a bit, and boy is this one hilly, but finished first in my age category and 9 th overall.</td></tr>
+<tr><td>62</td><td>April 7, 2018</td><td><a href="http://beyondlimitsrunning.businesscatalyst.com/raceresultsandphotos/2016-blu-results" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>29:40:42</td><td>Miles: 100</td><td>Got through it!</td></tr>
+<tr><td>63</td><td>September 15, 2018</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>5:25:40</td><td>12:25</td><td>It really is a devil after the dark. But I got through after a crazy summer.</td></tr>
+<tr><td>64</td><td>November 11, 2018</td><td><a href="https://www.runrocknroll.com/finisher-zone/search-and-results/?resultpage=1&amp;eventid=38&amp;subevent_id=1&amp;bib=7005" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:43:02</td><td>10:47</td><td>Windy and cold and had a bad start.</td></tr>
+<tr><td>65</td><td>March 23, 2019</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>5:03:10</td><td>11:34</td><td>High winds and hotter than expected but finished first in my age category!</td></tr>
+<tr><td>66</td><td>April 5, 2019</td><td><a href="http://beyondlimitsrunning.businesscatalyst.com/raceresultsandphotos/2016-blu-results" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>48 hours</td><td>Miles: 106</td><td>Farthest running distance to-date. First 48 hour ultra.</td></tr>
+<tr><td>67</td><td>September 21, 2019</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>5:04:52</td><td>11:38</td><td>Third place overall female. Great time on this tough course in the dark!</td></tr>
+<tr><td>68</td><td>November 17, 2019</td><td><a href="https://www.runrocknroll.com/finisher-zone/search-and-results/?resultpage=1&amp;eventid=38&amp;subevent_id=1&amp;bib=7005" target="_blank" rel="noopener noreferrer">Las Vegas Marathon</a></td><td>4:32:28</td><td>10:23</td><td>Improvement from last year! Windy and cold and tummy was a bit upset.</td></tr>
+<tr><td>69</td><td>April 25, 2020</td><td><a href="https://www.marathontrainingacademy.com/social" target="_blank" rel="noopener noreferrer">Social Distancing Marathon</a></td><td>5:17:42</td><td>12:08</td><td>Ran from home out for a half and then back home. It was very hot and I wasnt quite ready, but I finished! Time includes road crossing stops.</td></tr>
+<tr><td>70</td><td>May 19, 2020</td><td><a href="https://runtasticevents.com/conquer-covid19/" target="_blank" rel="noopener noreferrer">Conquer COVID-19 Marathon</a></td><td>5:16:36</td><td>12:05</td><td>Ran from home again but this time it was very high winds and I left home late in the day. Not my best work but I finished! Time includes road crossing stops.</td></tr>
+<tr><td>71</td><td>September 19, 2020</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>6:26:09</td><td>14:43</td><td>Didnt feel well, had issues with heat exhaustion (it was over 90 degrees for most of the race so I had to walk quite a bit) but persisted and finished. First place in my age group too.</td></tr>
+<tr><td>72</td><td>October 17, 2020</td><td><a href="https://ultrasignup.com/register.aspx?did=79241" target="_blank" rel="noopener noreferrer">Blu-Light Invitational Only Virtual Marathon</a></td><td>5:31:37</td><td>12:39</td><td>My third virtual event of the year. Had a few bumps along the way and lots of traffic lights but happy with my time and overall feeling. Ran for those who have battled COVID-19.</td></tr>
+<tr><td>73</td><td>March 20, 2021</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>5:32:55</td><td>12:43</td><td>Super windy but a nice chill. My first marathon in 2021 and so happy to have finished!</td></tr>
+<tr><td>74</td><td>April 9-10, 2021</td><td><a href="https://ultrasignup.com/results_event.aspx?did=68474" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>48 hours</td><td>Miles: 118 (24:24 pace)</td><td>Farthest running distance to-date: Finished 3rd overall female!</td></tr>
+<tr><td>75</td><td>September 18, 2021</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>5:54:06</td><td>13:31</td><td>Always tough with the wind and darkness (starts at 5pm), plus the heat followed by the coolness. But I persisted and got first in my age group, beat my last year time too!</td></tr>
+<tr><td>76</td><td>October 24, 2021</td><td><a href="https://www.runrocknroll.com/san-diego" target="_blank" rel="noopener noreferrer">Rock n Roll San Diego Marathon</a></td><td>4:41:05</td><td>10:44</td><td>Tougher than I expected with the hills, but a beautiful one nonetheless.</td></tr>
+<tr><td>77</td><td>February 18, 2022</td><td><a href="http://www.beyondlimitsrunning.com/jackpot-ultra-running-festival" target="_blank" rel="noopener noreferrer">Jackpot Ultra Running Festival</a></td><td>48 hours</td><td>Miles: 123.7 (23:17 pace)</td><td>Farthest running distance to-date! Beat my previous record in the company of the best runners in the world!</td></tr>
+<tr><td>78</td><td>March 19, 2022</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Labor of Love Lovell Canyon marathon</a></td><td>5:49:59</td><td>13:22</td><td>Not my favorite, it was super windy and hot and I think I wasnt fully recovered from the ultra. Either way, I persisted and finished!</td></tr>
+<tr><td>79</td><td>April 7-10, 2022</td><td><a href="https://ultrasignup.com/results_event.aspx?did=68474" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>48 hours</td><td>Miles: 120 (24:00 pace)</td><td>My PR on this course! It was really hot and windy though. Finished 3rd overall female again! Also, first time to complete two ultras in one year.</td></tr>
+<tr><td>80</td><td>September 17, 2022</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>5:53:25</td><td>13:29</td><td>Not my fastest, but still first in my age group. Windy weather and super dark as always.</td></tr>
+<tr><td>81</td><td>January 14, 2023</td><td><a href="https://bbscendurance.com/lakemeadrun/" target="_blank" rel="noopener noreferrer">Lake Mead Marathon</a></td><td>5:50:40</td><td>13:23</td><td>Windy and cold, but I finished with my head high and my mind clear to start a new year.</td></tr>
+<tr><td>82</td><td>March 3, 2023</td><td><a href="https://www.aravaiparunning.com/jackpot/" target="_blank" rel="noopener noreferrer">Jackpot Ultra Running Festival</a></td><td>48 hours</td><td>Miles: 115.48 (24:56 pace)</td><td>Really high winds in Vegas that weekend! I kept going and did my best! 4 th place overall female.</td></tr>
+<tr><td>83</td><td>April 14, 2023</td><td><a href="https://ultrasignup.com/results_event.aspx?did=68474" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>48 hours</td><td>Miles: 122 (23:36 pace)</td><td>Hot and cold and a new track. It was beautiful and I had a great time! Overall 3 rd place female!</td></tr>
+<tr><td>84</td><td>September 16, 2023</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>6:12:52</td><td>14:14</td><td>Super windy and overall tough day to run but I finished second in my age category!</td></tr>
+<tr><td>85</td><td>October 6, 2023</td><td><a href="https://www.stgeorgemarathon.com/" target="_blank" rel="noopener noreferrer">St. George Marathon</a></td><td>4:58:42</td><td>11:24</td><td>First time to do this one beautiful! A bit warmer than expected but now I know. 😊</td></tr>
+<tr><td>86</td><td>February 13, 2024</td><td><a href="https://www.aravaiparunning.com/jackpot/" target="_blank" rel="noopener noreferrer">Jackpot Ultra Running Festival</a></td><td>48 hours</td><td>Miles: 120.1 (23:59 pace)</td><td>A bit warmer than the previous year but nice weather overall.</td></tr>
+<tr><td>87</td><td>April 4, 2024</td><td><a href="https://ultrasignup.com/results_event.aspx?did=68474" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>48 hours</td><td>Miles: 106 (27:10 pace)</td><td>The worst weather I have ever run in for sure it was a winter weather storm warning complete with snow, hail, and slush. It took immense persistence and lots of winter clothing! Still finished in 5 th place overall out of 23.</td></tr>
+<tr><td>88</td><td>September 21, 2024</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>5:56:29</td><td>13:36</td><td>Windy and a bit warmer than expected and VERY dark. But after a big break in distance running, I was happy to beat my time from last year. Its a mount-athon too, dont forget.</td></tr>
+<tr><td>89</td><td>October 5, 2024</td><td><a href="https://www.stgeorgemarathon.com/" target="_blank" rel="noopener noreferrer">St. George Marathon</a></td><td>5:36:08</td><td>12:49</td><td>It got really hot for the second half like over 90 degrees, so my time got very slow as my distance increased. Nonetheless, I finished!</td></tr>
+<tr><td>90</td><td>November 3, 2024</td><td><a href="https://vegasmarathon.com/" target="_blank" rel="noopener noreferrer">Vegas Marathon</a></td><td>5:23:32</td><td>12:20</td><td>What a beautiful marathon - inaugural! We had a high wind advisory which hit really hard once we hit the last 10 miles. Still happy that this was my fastest marathon for 2024. 😊</td></tr>
+<tr><td>91</td><td>February 15, 2025</td><td><a href="https://www.aravaiparunning.com/jackpot/" target="_blank" rel="noopener noreferrer">Jackpot Ultra Running Festival</a></td><td>48 hours</td><td>Miles: 106.23 (27:07 pace)</td><td>Windy and cold but I did my best.</td></tr>
+<tr><td>92</td><td>April 6, 2025</td><td><a href="https://ultrasignup.com/results_event.aspx?did=115231" target="_blank" rel="noopener noreferrer">BLU (Beyond Limits Ultra) Multi Day Race</a></td><td>48 hours</td><td>Miles: 110 (26:11 pace)</td><td>It was very windy and very cold at night (below freezing) but I persisted and did my best. Ended up placing as 3 rd place overall female!</td></tr>
+<tr><td>93</td><td>September 20, 2025</td><td><a href="http://www.calicoracing.com/" target="_blank" rel="noopener noreferrer">Devil after Dark in Lovell Canyon</a></td><td>6:18:46</td><td>14:26</td><td>It was very hot at the beginning again and I had a bit of a stumble (to put it mildly). But I still persisted and finished in a decent time, especially for this mountathon.</td></tr>
+<tr><td>94</td><td>October 4, 2025</td><td><a href="https://www.stgeorgemarathon.com/" target="_blank" rel="noopener noreferrer">St. George Marathon</a></td><td>5:00:03</td><td>11:27</td><td>Very cold beginning and warm end again. This one is always harder than it looks!</td></tr>
+<tr><td>95</td><td>October 26, 2025</td><td><a href="https://vegasmarathon.com/" target="_blank" rel="noopener noreferrer">Vegas Marathon</a></td><td>5:02:48</td><td>11:33</td><td>Great beginning, the end was too hot though. Glad to finish out my year with this one. 😊</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:12px;">
+      Source: Faculty marathon record page content (as provided in the uploaded marathons.html file).
+    </p>
+  </div>
+
+  <div class="footer">© 2025 | Built for GitHub Pages</div>
+
+  <script>
+    (function() {
+      const q = document.getElementById('q');
+      const fromYear = document.getElementById('fromYear');
+      const toYear = document.getElementById('toYear');
+      const table = document.getElementById('raceTable');
+      const rows = Array.from(table.querySelectorAll('tbody tr'));
+      const visibleCount = document.getElementById('visibleCount');
+
+      function yearFromRow(tr) {
+        const dateText = (tr.children[1]?.textContent || '');
+        const m = dateText.match(/\b(19|20)\d{2}\b/);
+        return m ? parseInt(m[0], 10) : null;
+      }
+
+      function applyFilter() {
+        const term = (q.value || '').trim().toLowerCase();
+        const fy = parseInt((fromYear.value || '').trim(), 10);
+        const ty = parseInt((toYear.value || '').trim(), 10);
+        const hasFY = !Number.isNaN(fy);
+        const hasTY = !Number.isNaN(ty);
+
+        let shown = 0;
+
+        for (const tr of rows) {
+          const text = tr.textContent.toLowerCase();
+          const y = yearFromRow(tr);
+
+          const matchTerm = !term || text.includes(term);
+          const matchFrom = !hasFY || (y !== null && y >= fy);
+          const matchTo = !hasTY || (y !== null && y <= ty);
+
+          const show = matchTerm && matchFrom && matchTo;
+          tr.style.display = show ? '' : 'none';
+          if (show) shown++;
+        }
+
+        visibleCount.textContent = shown + ' shown';
+      }
+
+      q.addEventListener('input', applyFilter);
+      fromYear.addEventListener('input', applyFilter);
+      toYear.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
