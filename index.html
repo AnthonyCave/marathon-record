@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Anjala Krishen | Marathon & Ultramarathon Record</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #c1121f;
+    --secondary: #003049;
+    --accent: #669bbc;
+    --light: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #003049, #001d3d);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: var(--accent);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.table-container {
+    overflow-x: auto;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+tr:hover {
+    background-color: rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.4);
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width:768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <h1>Dr. Anjala Krishen</h1>
+    <h2>Marathon & Ultramarathon Record</h2>
+</header>
+
+<div class="container fade-in">
+    <h3 class="section-title">Race Achievements</h3>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Year</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Distance</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Replace rows below with your actual data -->
+                <tr>
+                    <td>1</td>
+                    <td>2023</td>
+                    <td>Example Marathon</td>
+                    <td>City, Country</td>
+                    <td>42.2 km</td>
+                    <td>3:45:10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2024</td>
+                    <td>Example Ultra</td>
+                    <td>City, Country</td>
+                    <td>50 km</td>
+                    <td>5:20:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+    © 2026 Dr. Anjala Krishen | Marathon & Ultramarathon Record
+</footer>
+
+</body>
+</html>
